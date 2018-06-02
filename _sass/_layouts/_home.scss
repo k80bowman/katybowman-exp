@@ -1,0 +1,23 @@
+.home {
+    width: 90%;
+    margin: 0 auto;
+
+    &__primary {
+        padding: 20px 0;
+
+        &--image {
+            width: 75px;
+            float: left;
+            margin: 5px 10px 5px 0;
+        }
+
+        &--imgQuote {
+            margin: 10px 0;
+            height: 125px;
+        }
+
+        &--quote {
+            padding-top: 10px;
+        }
+    }
+}

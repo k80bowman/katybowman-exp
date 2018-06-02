@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="myWork">
+    <h2>My Work</h2>
+
+    <div class="myWork__work">
+        <div class="articles">
+            {% assign works = site.work | reverse %}
+            {% for work in works %}
+            <p class="articles--type">{{ work.type }}</p>
+            <h3 class="articles--title"><a target="_blank" href="{{ post.link }}">{{ work.title }}</a></h2>
+            <p class="articles--quote">{{ work.excerpt }}</p>
+            <div class="articles--pubLink"><a target="_blank" href="{{ post.pubLink }}">{{ work.publication }}</a></div>
+            <hr>
+            {% endfor %}
+        </div>
+    </div>
+</div>

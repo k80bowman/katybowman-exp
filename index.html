@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="home">
+    <div class="articles">
+        <div class="home__primary">
+            {% for work in site.work %}
+            {% if forloop.index == forloop.length %}
+            <p class="articles--type">{{ work.type }}</p>
+            <h2 class="home__primary--title"><a target="_blank" href="{{ work.link }}">{{ work.title }}</a></h2>
+            <div class="home__primary--imgQuote">
+                {% if work.image != null %}
+                <img class= "home__primary--image" src = {{ work.image }} alt="{{ work.title }}">
+                {% endif %}
+                <p class="home__primary--quote">{{ work.excerpt }}</p>
+            </div>
+            <div class="articles--pubLink"><a target="_blank" href="{{ work.pubLink }}">{{ work.publication }}</a></div>
+            <hr>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="home__secondary">
+            <ul class="articles__workList">
+                {% assign works = site.work | reverse %}
+                {% for work in works limit:5 %}
+                {% if forloop.index > 1 %}
+                <li>
+                    <p class="articles--type">{{ work.type }}</p>
+                    <h3 class="articles--title">
+                        <a target="_blank" href="{{ work.link }}">{{ work.title }}</a>
+                    </h3>
+                    <p class="articles--quote">{{ work.excerpt }}</p>
+                    <div class="articles--pubLink"><a target="_blank" href="{{ work.pubLink }}">{{ work.publication }}</a></div>
+                    <hr>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

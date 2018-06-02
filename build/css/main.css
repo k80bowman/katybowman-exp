@@ -1,0 +1,116 @@
+body, p, li, a {
+  font-family: "Merriweather", "Georgia", serif;
+  font-size: 14px;
+  color: #303030;
+  line-height: 1.25;
+  margin: 0; }
+
+h3, h2, h1 {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 1.15;
+  margin: 0; }
+
+h3 {
+  font-size: 1.792em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h1 {
+  font-size: 4.48em; }
+
+a {
+  text-decoration: none;
+  color: #134E25;
+  font-weight: normal; }
+
+a:hover, a:active {
+  color: #DE6B20;
+  text-decoration: none;
+  font-weight: normal; }
+
+body {
+  background-color: #fefefa; }
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.logo {
+  background-color: #fefefa;
+  height: 75px;
+  width: 75px;
+  border-radius: 100px;
+  text-align: center;
+  margin: 1em auto 0 auto;
+  position: relative; }
+
+.menu {
+  height: 90px; }
+  .menu ul {
+    width: 300px;
+    list-style: none;
+    overflow: hidden;
+    margin: -80px auto 0 auto;
+    padding: 0;
+    text-align: center; }
+    .menu ul li a {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.618em;
+      color: #fefefa;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+      width: 100px;
+      float: left;
+      margin-top: 1em; }
+    .menu ul a:hover {
+      border-bottom: 2px solid #DE6B20; }
+
+.left {
+  margin-right: 100px; }
+
+.name {
+  font-family: "Oswald", sans-serif;
+  color: #fefefa;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 0.25em 0; }
+
+.owl {
+  width: 50px;
+  vertical-align: middle; }
+
+.site-header {
+  width: 100%;
+  background-color: #8EAC7B;
+  overflow: auto; }
+
+.home {
+  width: 90%;
+  margin: 20px auto; }
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #8EAC7B;
+  margin: 0 auto 10px auto; }
+
+.primary-image {
+  width: 75px;
+  float: left;
+  margin: 5px 10px 5px 0; }
+
+.primary-img-quote {
+  margin: 10px 0;
+  height: 125px; }
+
+.primary-link {
+  width: 90%;
+  margin: 0 auto; }
+
+.primary-quote {
+  padding-top: 10px; }
+
+.type {
+  color: #DE6B20;
+  margin: 0.25em; }

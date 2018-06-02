@@ -1,0 +1,53 @@
+//media breakpoint
+$tablet-portrait: "(min-width: 600px)";
+
+@media #{$tablet-portrait} {
+//header
+    .contact {
+        width: 20%;
+    }
+
+    .site-header {
+        .menu {
+            ul {
+                flex-flow: row nowrap;
+                width: 80%;
+                justify-content: space-between;
+
+                .side {
+                    flex-basis: 12.5%;
+                }
+                .middle {
+                    flex-basis: 25%
+                }
+            }
+        }
+    }
+
+    .home {
+        width: 80%;
+    }
+
+    .site-footer {
+        .footer__menu {
+            width: 50%;
+            ul {
+                li a {
+                    font-size: $modular-scale-1;
+                }
+            }
+        }
+    }
+
+    .myWork {
+        width: 80%;
+    }
+
+    .myBlog {
+        width: 80%;
+    }
+
+    .blogPost {
+        width: 80%;
+    }
+}

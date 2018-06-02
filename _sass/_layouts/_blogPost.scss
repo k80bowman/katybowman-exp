@@ -1,0 +1,26 @@
+.blogPost {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__header {
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            padding: 0 0 10px 20px;
+        }
+    }
+     &__content {
+         p {
+             margin: 10px 0;
+         }
+     }
+}

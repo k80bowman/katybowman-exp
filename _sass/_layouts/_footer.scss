@@ -1,0 +1,41 @@
+.site-footer {
+    width: 100%;
+    background-color: $light-green;
+    overflow: auto;
+
+    .footer__menu {
+        width: 80%;
+        margin: 10px auto;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;;
+            align-items: center;
+            height: 40px;
+
+            a {
+                font-family: $heading-stack;
+                font-size: 1.25em;
+                color: $base-font-color;
+
+                &:hover {
+                    border-bottom: 2px solid $orange;
+                }
+            }
+
+            .active {
+                border-bottom: 2px solid $orange;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        margin: 15px auto;
+
+        p {
+            font-family: $body-stack;
+            color: $base-font-color;
+        }
+    }
+}

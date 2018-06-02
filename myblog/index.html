@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="myBlog">
+    <h2>My Blog</h2>
+
+    <div class="myBlog__posts">
+        <div class="articles">
+            {% for post in site.posts %}
+            {% if post.category == 'blog' %}
+            <p class="articles--type">{{ post.type }}</p>
+            <h3 class="articles--title">
+                <a target="_blank" href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <p class="articles--date">{{ post.date | date: '%B %d, %Y' }}</p>
+            <p class="articles--quote">{{ post.excerpt }}</p>
+            <div class="articles--pubLink"><a href="{{ post.link }}">{{ post.publication }}</a></div>
+            <hr>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

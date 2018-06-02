@@ -1,0 +1,51 @@
+//media breakpoint
+$tablet-landscape-width: "(min-width: 900px)";
+
+@media #{$tablet-landscape-width} {
+    .contact {
+        width: 15%;
+    }
+
+    .site-header {
+        .name {
+            margin: 30px 0;
+        }
+    }
+
+    .home {
+        width: 70%;
+    }
+
+    .site-footer {
+        .footer__menu {
+            margin: 20px auto;
+        }
+    }
+
+    .myStory {
+        &__picture {
+            flex-basis: 40%;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        &__story {
+            flex-basis: 60%;
+        }
+    }
+
+    .myWork {
+        width: 70%;
+    }
+
+    .myBlog {
+        width: 70%;
+    }
+
+    .blogPost {
+        width: 70%;
+    }
+
+}

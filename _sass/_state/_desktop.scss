@@ -1,0 +1,105 @@
+//media breakpoint
+$desktop-width: "(min-width: 1200px)";
+
+@media #{$desktop-width} {
+    h1 {
+        font-size: $modular-scale-4;
+    }
+
+    h2 {
+        font-size: $modular-scale-3
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+
+    .contact {
+        width: 10%;
+    }
+
+    .site-header {
+        .logo {
+            height: 100px;
+            width: 100px;
+        }
+
+        .owl {
+            width: 70px;
+        }
+
+        .menu {
+            ul {
+                width: 60%;
+
+                li a {
+                    font-size: $modular-scale-2;
+                }
+            }
+        }
+    }
+
+    .home {
+        width: 50%;
+
+        &__primary {
+            &--image {
+                width: 100px;
+                margin: 10px 20px 10px 0;
+            }
+
+            &--imgQuote {
+                margin: 20px 0;
+            }
+
+            &--quote {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .articles {
+        &--type {
+            margin: 10px 20px;
+        }
+
+        &--quote {
+            padding: 20px;
+        }
+    }
+
+    .myStory {
+        justify-content: center;
+
+        &__picture {
+            flex-basis: 25%;
+        }
+        &__story {
+            flex-basis: 50%;
+            padding: 20px 0;
+
+            p {
+                margin: 20px auto;
+            }
+        }
+    }
+
+    .myWork {
+        width: 50%;
+    }
+
+    .myBlog {
+        width: 50%;
+    }
+
+    .blogPost {
+        width: 50%;
+
+        p {
+            margin: 20px 0;
+        }
+    }
+}

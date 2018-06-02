@@ -1,0 +1,29 @@
+<header class="site-header">
+
+    <nav class="navbar">
+        <div class="header-container">
+            <div class="logo">
+                <span class="helper"></span><img class="owl" src="/images/Katy_owl_logo.png" alt="Owl">
+            </div>
+
+            <div class="menu">
+                <ul class="nav">
+                    <li class="side"><a href="/" {% if page.url == '/' %} class="active" {% endif %} >Home</a></li>
+                    <li class="middle"><a href="/mywork" {% if page.url == '/mywork/' %} class="active" {% endif %} >My Work</a></li>
+                    <li class="middle"><a href="/mystory" {% if page.url == '/mystory/' %} class="active" {% endif %} >My Story</a></li>
+                    <li class="side"><a href="/myblog" {% if page.url == '/myblog/' || page.category == 'blog' %} class="active" {% endif %} >My Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="name">
+        Katy Bowman
+    </h1>
+
+    <div class="contact">
+        <div class="contact__link email"><span class="helper"></span>{% include icon-mail.html %}</div>
+        <div class="contact__link twitter"><span class="helper"></span>{% include icon-twitter.html username=site.twitter_username %}</div>
+    </div>
+
+</header>

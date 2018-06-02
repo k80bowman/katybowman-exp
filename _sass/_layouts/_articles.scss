@@ -1,0 +1,37 @@
+.articles {
+    padding: 10px 0;
+
+    &--type {
+        color: $orange;
+        margin: 5px 10px;
+    }
+
+    hr {
+      width: 100%;
+      height: 1px;
+      background-color: $light-green;
+      margin: 10px auto 0 auto;
+    }
+
+    a:hover {
+        color: $orange;
+    }
+
+    .home--pubLink {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    li {
+        padding-bottom: 20px;
+    }
+
+    &--date {
+        padding-top: 10px;
+        margin-left: 10px; 
+    }
+
+    &--quote {
+        padding: 10px;
+    }
+}

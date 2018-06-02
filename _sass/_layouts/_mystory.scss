@@ -1,0 +1,25 @@
+.myStory {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__picture {
+        text-align: center;
+        flex-basis: 100%;
+        img {
+            width: 200px;
+            border-radius: 200px;
+            margin: 30px auto;
+        }
+    }
+
+    &__story {
+        flex-basis: 100%;
+        padding: 10px 0;
+        p {
+            width: 90%;
+            margin: 10px auto;
+        }
+    }
+}

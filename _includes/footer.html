@@ -1,0 +1,21 @@
+<footer class="site-footer">
+
+    <div class="footer__menu">
+        <ul>
+            <li><a href="/" {% if page.url == '/' %} class="active" {% endif %} >Home</a></li>
+            <li><a href="/mywork" {% if page.url == '/mywork/' %} class="active" {% endif %} >My Work</a></li>
+            <li><a href="/mystory" {% if page.url == '/mystory/' %} class="active" {% endif %} >My Story</a></li>
+            <li><a href="/myblog" {% if page.url == '/myblog/' || page.category == 'blog' %} class="active" {% endif %} >My Blog</a></li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <div class="contact__link email"><span class="helper"></span>{% include icon-mail.html %}</div>
+        <div class="contact__link twitter"><span class="helper"></span>{% include icon-twitter.html username=site.twitter_username %}</div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Katy Bowman</p>
+    </div>
+
+</footer>
